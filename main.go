@@ -26,13 +26,13 @@ type Inventory struct {
 	Items map[string]int
 }
 
-var InventoryList = map[string][3]int{
-	"молоко":   {1, 5, 0},
-	"milkyWay": {3, 4, 0},
-	"нож":      {3, 4, 1},
-	"щит":      {3, 4, 1},
-	"молот":    {3, 4, 1},
-	"орехи":    {3, 4, 1},
+var InventoryList = map[string][4]int{
+	"молоко":   {10, 0, 0, 0},
+	"milkyWay": {10, 0, 0, 0},
+	"нож":      {0, 15, 4, 1},
+	"щит":      {10, 3, 4, 1},
+	"молот":    {10, 3, 4, 1},
+	"орехи":    {10, 3, 4, 0},
 }
 
 func (i *Inventory) Take(stuff string) string {
